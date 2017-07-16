@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+      <LinearLayout 
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content">
+              <TextView 
+                  android:layout_width="80dp"
+                  android:layout_height="wrap_content"
+                  android:text="用户名:"
+                  android:textSize="20dp"
+                  />
+              <EditText
+                  android:id="@+id/admin"
+                  android:layout_marginLeft="15dp"
+                  android:layout_width="250dp"
+                  android:layout_height="wrap_content"
+                  android:hint="请输入用户名"
+                  />
+          </LinearLayout>
+           <LinearLayout 
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content">
+
+               <TextView
+                   android:layout_width="80dp"
+                   android:layout_height="wrap_content"
+                   android:text="    IP     :"
+                   android:textSize="20dp"/>
+
+              <EditText
+                  android:id="@+id/password"
+                  android:layout_width="250dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="15dp"
+                  android:ems="10"
+                  android:hint="请输入密码" >
+
+                  <requestFocus />
+              </EditText>
+
+          </LinearLayout>
+       <Button
+           	 android:id="@+id/connect_button"
+           	 android:background="@drawable/savebutton"
+             android:layout_marginLeft="10dp"
+              android:layout_marginTop="10dp"
+             android:layout_marginRight="10dp"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:text="开始连接" /> 
+</LinearLayout>
